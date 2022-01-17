@@ -162,31 +162,20 @@ che consente di amministrare un database MySQL o MariaDB tramite un qualsiasi br
       
  ![](img-README/img7.png)
       
-<<<<<<< HEAD
 - Rinominare il file ".env.example" in ".env".     
   Aprire il file ".env" e reimpostare i valori di connessione al database .
-=======
+
 - Rinominare il file ".env.example" in ".env". 
-      
-Aprire il file ".env" e reimpostare i valori di connessione al database .
->>>>>>> 829e4310e88b535ef8949654b71949d248a73368
+  Aprire il file ".env" e reimpostare i valori di connessione al database .
+
       
  ![](img-README/img8.png)
       
 - Ritornare al prompt dei comandi ed eseguire il comando: "php artisan key:generate".<br>
-<<<<<<< HEAD
   "php artisan key:generate" è un comando che imposta il valore APP_KEY nel tuo".env" file.
-=======
-"php artisan key:generate" è un comando che imposta il valore APP_KEY nel tuo".env" file.
->>>>>>> 829e4310e88b535ef8949654b71949d248a73368
       
 - Ora si puo avviare l'app attraverso il comando: "php artisan serve" 
 Andare al seguente link: " http://127.0.0.1:8000"
       
 ## Licenza
-<<<<<<< HEAD
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> 829e4310e88b535ef8949654b71949d248a73368
