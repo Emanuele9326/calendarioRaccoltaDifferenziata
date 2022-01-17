@@ -1,66 +1,157 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1 algin="center">appPHP: Calendario raccolta differenziata</h1>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<details open="open">
+  <summary>Sommario</summary>
+  <ol>
+    <li>
+      <a href="#informazioni-sul-progetto">Informazioni sul progetto</a>
+      <ul>
+        <li><a href="#costruito-con">Costruito con</a></li>
+         <li><a href="#software-utilizzati">Software utilizzati</a></li>
+      </ul>
+    </li>
+   <li><a href="#descrizione">Descrizione</a>
+     <ul>
+        <li><a href="#struttura-repository">Struttura Repository</a></li>
+        <li><a href="#Download-e-testare-app-in-locale">Download e testare app in locale</a></li>
+      </ul>
+    </li>
+   <li><a href="#licenza">Licenza</a></li>
+  <ol>
+</details>
+
+<!-- Informazioni sul progetto-->
+
+## Informazioni sul progetto
+
+La finalità di questo progetto è quella di realizzare una applicazione PHP che aiuti a tenere traccia dei giorni della settimana in cui avviene la raccolta differenziata.
+
+Questa applicazione è stata creata utilizzando il framework Laravel,e un database relazionale SQL
+
+#### <h3>Costruito con:</h3>
+
+<b>Framework</b>:
+
+- [Laravel] (https://laravel.com)
+- [Bootstrap] (https://getbootstrap.com/)
+
+<b>Database</b>
+ [MySQL] (https://www.mysql.com/it/)
+
+
+#### <h3>Software utilizzati</h3>
+      
+ <b>Gestore di pachetti per linguaggio di programmazione PHP</b>
+
+- [COMPOSER] (https://getcomposer.org/)
+      
+ <b> Piattaforma software </b>
+      
+ - [XAMPP] (https://www.apachefriends.org/it/index.html)
+      
+<!--Descrizione-->
+
+## Descrizione
+
+### Struttura Repository
+
+<h4>Directory app</h4>
+La directory app contiene il codice principale dell'applicazione
+<details>
+  <summary>Directory app</summary>
+   <ol>
+     <li>
+       Folder Console
+      </li>
+      <li>
+        Folder Exceptions
+      </li>
+      <li>
+        Folder Http
+      </li>
+      <li>
+        Folder Models
+      </li>
+      <li>
+        Folder Providers
+      </li>
+    </ol>
+</details> 
+
+<h4>Directory bootsrap</h4>
+<p>
+  La directory bootstrap contiene il file app.php che esegue il bootstrap del framework. Questa directory ospita anche una directory cache  che contiene i file generati dal framework per l'ottimizzazione delle prestazioni come i file della cache di route e servizi.
 </p>
+<h4>Directory config</h4>
+ <p>La directory config, contiene tutti i file di configurazione dell'applicazione.</p>
+<h4>Directory database</h4>
+ <p>La directory database contiene la folder migrations nella quale sono ospitate i file di migrazione, le cartelle factories e seeders.</p>
+<h4>Directory public</h4>
+ <p>La directory public contiene il index.php file, che è il punto di ingresso per tutte le richieste che entrano nell'applicazione e configura il caricamento automatico. Questa directory ospita anche le tue risorse come immagini, JavaScript e CSS.</p>
+<h4>Directory resource</h4>
+La directory resources contiene la cartella view nella quale abbiamo le view.
+<h4>Directory routes</h4>
+Il file web.php contiene i percorsi che RouteServiceProvider inserisce nel gruppo del middleware Web, che fornisce lo stato della sessione, la protezione CSRF e la crittografia dei cookie.
+<h4>Directory storage</h4>
+<p>La directory storage contiene i log, i modelli Blade compilati, le sessioni basate su file, le cache di file e altri file generati dal framework</p>
+<h4>Directory test</h4>
+<p>La directory tests contiene i test automatici</p>
+<h4>Directory vendor</h4>
+<p>La directory vendor contiene le dipendenze di Composer </p> 
 
-## About Laravel
+<h3>Il codice dell'applicazione risiede nelle seguenti folder:</h3>
+ <ol>
+    <li>app/Http/Controllers: risiedono i vari controllers .
+    I controllers possono raggruppare la logica di gestione delle richieste correlata in un'unica classe.
+    </li>
+    <li>app/Models:contiene i model corrispondente a ciascuna tabella. Ogni Model viene utilizzato per interagire con la rispettiva tabella attraverso Eloquent(mappatore relazionale a oggetti (ORM))
+    </li>
+    <li>database/migrations: Le migrations consentendo di definire e condividere la definizione dello schema del database dell'applicazione.
+    </li>
+    <li>public/css/style.css</li>
+    <li>public/js/addInput.js</li>
+    <li>resources/views: risiedono le varie view dell'app</li>
+    <li>routes/web.php
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+ </ol>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Funzionalità dell'applicazione
+- L'applicazione è costituita da tre view:
+  - Schermata Home visualizza il giorno corrente con il relativo conferimento giornaliero e fascia oraria di     ritiro.
+  ![](img-README/img1.png)
+  - Con la view "CREA CALENDARIO" si puà creare un calendario settimanale.
+    Con il pulsante "Aggiungi Riga " si può aggiungere più ritiri per ogni giorno.
+    ![](img-README/img2.png)
+  - View "Calendario settimanale"
+    ![](img-README/img3.png)
+### Download e testare app in locale
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
+- Sul proprio dispositivo è necessario installare: 
+   - un ambiente di lavoro sul proprio computer per poter eseguire programmi PHP.
+     Durante lo sviluppo di questa applicazione ho usato XAMPP è un ambiente di sviluppo web disponibile per Windows, Linux e Mac. Consente di creare applicazioni web con Apache, PHP e MySQL. 
+     (https://www.apachefriends.org/it/index.html)
+   - [Composer] gestore di pacchetti a livello applicativo per il linguaggio di programmazione PHP (https://getcomposer.org/download/) 
+   
+- Scaricare il Repository: (https://github.com/Emanuele9326/calendarioRaccoltaDifferenziata)
+   ![](img-README/img4.png)
+- Sè si utilizza XAMPP come ambiente di sviluppo la cartella del repository appena scaricato deve essere posizionata " c:/xampp/htdocs" directory, inquanto per impostazione predefinita i file vengono serviti da tale directory.
+- Aprire la cartella del repository attraverso il prompt dei comandi ed eseguire il comando "composer install".
+In questo modo si vanno in automatico ad installare tutte le dipendenze e le librerie di cui necessita l'applicazione.
+- Dalla schermata di XAMPP avviare Apache e MySql.
+  ![](img-README/img5.png)
+- Sempre dall'interfaccia di XAMPP cliccare sul pulsante Admin. In questo modo si viene reindirizzati su phpAdmin
+che consente di amministrare un database MySQL o MariaDB tramite un qualsiasi browser.
+![](img-README/img6.png)
+- Attraverso phpAdmin creare un nuovo database.
+- Cliccare su importa e caricare il file migration "app-php.sql" in questo modo si riproduce la struttura del database.
+ ![](img-README/img7.png)
+- Rinominare il file ".env.example" in ".env". 
+Aprire il file ".env" e reimpostare i valori di connessione al database .
+ ![](img-README/img8.png)
+- Ritornare al prompt dei comandi ed eseguire il comando: "php artisan key:generate".
+"php artisan key:generate" è un comando che imposta il valore APP_KEY nel tuo".env" file.
+- Ora si puo avviare l'app attraverso il comando: "php artisan serve" 
+Andare al seguente link: " http://127.0.0.1:8000"
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
