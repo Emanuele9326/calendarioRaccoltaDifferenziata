@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\conf_ora;
+
 
 class DBcontroller extends Controller
 {
@@ -15,14 +14,14 @@ class DBcontroller extends Controller
      */
     public function index()
     {
-        $array_giorni = array('Lunedi', 'Martedi', 'Mercoledi', 'Giovedi', 'Venerdi', 'Sabato', 'Domenica');
-        for ($i = 0; $i < count($array_giorni); $i++) {
-            $users = DB::table('giorno_conferimento')
+        $array_day = array('Lunedi', 'Martedi', 'Mercoledi', 'Giovedi', 'Venerdi', 'Sabato', 'Domenica');
+        for ($i = 0; $i < count($array_day); $i++) {
+            $week = DB::table('giorno_conferimento')
                 ->join('conf_ora', 'giorno_conferimento.id', '=', 'conf_ora.idG')
                 ->select('giorno', 'conferimento', 'oraInizio', 'oraFine')
                 ->orderBy('idG','asc')
                 ->get();
-            return view('weekly_collection',['users'=>$users]);
+            return view('weekly_collection',['week'=>$week]);
         }
     }
 
@@ -81,48 +80,5 @@ class DBcontroller extends Controller
         return redirect('/viewaddConf')->with('completed', 'Inserimento avvenuto con successo!');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+   
 }

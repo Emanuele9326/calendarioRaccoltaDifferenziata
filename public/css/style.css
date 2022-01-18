@@ -58,3 +58,12 @@ body {
     margin-right: 0;
     margin-left: 0;
 }
+
+@media screen and (max-width:770px) {
+    #row1 td {
+        display: block;
+    }
+    .row1 td {
+        display: block;
+    }
+}

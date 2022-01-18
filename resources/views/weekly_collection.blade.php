@@ -14,7 +14,7 @@
         </thead>
         <tbody>
             
-            @foreach ($users as $key => $value) 
+            @foreach ($week as $key => $value) 
                 <tr>
                     <th>{{$value->giorno}}</th>
                     <td>{{$value->conferimento}}</td>

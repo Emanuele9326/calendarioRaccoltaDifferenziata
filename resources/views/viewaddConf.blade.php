@@ -3,7 +3,7 @@
 
 <div class="card push-top">
   <div class="card-header">
-    Aggiungi conferiemto
+    Aggiungi conferimento
   </div>
   <div class="card-body">
     @if(session()->exists('completed'))
@@ -27,9 +27,9 @@
           @csrf
           <td><input type="text" name="conferimento[]" placeholder="Plastica" required></td>
 
-          <td><label for="ora-inizio">ora inizio:</label><input type="time" id="ora-inizio" step="1" name="oraInizio[]" required></td>
+          <td><label for="ora-inizio">Ora Inizio:</label><input type="time" id="ora-inizio" step="1" name="oraInizio[]" required></td>
 
-          <td><label for="ora-fine"> ora fine: </label><input type="time" id="ora-fine" step="1" name="oraFine[]" required></td>
+          <td><label for="ora-fine"> Ora Fine: </label><input type="time" id="ora-fine" step="1" name="oraFine[]" required></td>
         </tr>
       </table>
       <input type="button" onclick="addMore()" value="Aggiungi Riga">
