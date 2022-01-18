@@ -144,7 +144,7 @@ In questo modo si vanno in automatico ad installare tutte le dipendenze e le lib
 che consente di amministrare un database MySQL o MariaDB tramite un qualsiasi browser.
 ![](img-README/img6.png)
 - Attraverso phpMyAdmin creare un nuovo database.
-- Cliccare su importa e caricare il file migration "database_app-php.sql" in questo modo si riproduce la struttura del database.<br>
+- Cliccare su importa e caricare il file migration "database_app-php.sql" (il file "database_app-php.sql" si trova nella folder database/migrations ) in questo modo si riproduce la struttura del database.<br>
  ![](img-README/img7.png)
 - Rinominare il file ".env.example" in ".env". 
 Aprire il file ".env" e impostare i valori di connessione al database .
