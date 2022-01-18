@@ -90,7 +90,7 @@ La directory app contiene il codice principale dell'applicazione
 <h4>Directory public</h4>
  <p>La directory public contiene il index.php file, che è il punto di ingresso per tutte le richieste che entrano nell'applicazione e configura il caricamento automatico. Questa directory ospita anche le tue risorse come immagini, JavaScript e CSS.</p>
 <h4>Directory resource</h4>
-La directory resources contiene la cartella view nella quale abbiamo le view.
+La directory resources contiene la cartella views nella quale abbiamo le views.
 <h4>Directory routes</h4>
 Il file web.php contiene i percorsi che RouteServiceProvider inserisce nel gruppo del middleware Web, che fornisce lo stato della sessione, la protezione CSRF e la crittografia dei cookie.
 <h4>Directory storage</h4>
