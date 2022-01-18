@@ -24,7 +24,7 @@
 
 ## Informazioni sul progetto
 
-La finalità di questo progetto è quella di realizzare una applicazione PHP che aiuti a tenere traccia dei giorni della settimana in cui avviene la raccolta differenziata.
+La finalità di questo progetto è quella di realizzare un'applicazione PHP che aiuti a tenere traccia dei giorni della settimana in cui avviene la raccolta differenziata.
 
 Questa applicazione è stata creata utilizzando il framework Laravel,e un database relazionale SQL
 
