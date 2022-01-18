@@ -12,6 +12,9 @@
    @if (($date - 1)==$i) 
       @php $ind=($date - 1);@endphp 
      <h3>@php echo $day[$i]; @endphp</h3>
+
+     <!--$ conf is an array see MainView controllers-->
+     
      @if(count($conf)==0)
         <p>Nessun ritiro</p>
      @elseif (count($conf)== 1) 
