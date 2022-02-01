@@ -24,7 +24,7 @@
 
 ## Informazioni sul progetto
 
-La finalità di questo progetto è quella di realizzare una applicazione PHP che aiuti a tenere traccia dei giorni della settimana in cui avviene la raccolta differenziata.
+La finalità di questo progetto è quella di realizzare un'applicazione PHP che aiuti a tenere traccia dei giorni della settimana in cui avviene la raccolta differenziata.
 
 Questa applicazione è stata creata utilizzando il framework Laravel,e un database relazionale SQL
 
@@ -90,7 +90,7 @@ La directory app contiene il codice principale dell'applicazione
 <h4>Directory public</h4>
  <p>La directory public contiene il index.php file, che è il punto di ingresso per tutte le richieste che entrano nell'applicazione e configura il caricamento automatico. Questa directory ospita anche le tue risorse come immagini, JavaScript e CSS.</p>
 <h4>Directory resource</h4>
-La directory resources contiene la cartella view nella quale abbiamo le view.
+La directory resources contiene la cartella views nella quale abbiamo le views.
 <h4>Directory routes</h4>
 Il file web.php contiene i percorsi che RouteServiceProvider inserisce nel gruppo del middleware Web, che fornisce lo stato della sessione, la protezione CSRF e la crittografia dei cookie.
 <h4>Directory storage</h4>
@@ -144,7 +144,7 @@ In questo modo si vanno in automatico ad installare tutte le dipendenze e le lib
 che consente di amministrare un database MySQL o MariaDB tramite un qualsiasi browser.
 ![](img-README/img6.png)
 - Attraverso phpMyAdmin creare un nuovo database.
-- Cliccare su importa e caricare il file migration "database_app-php.sql" in questo modo si riproduce la struttura del database.<br>
+- Cliccare su importa e caricare il file migration "database_app-php.sql" (il file "database_app-php.sql" si trova nella folder database/migrations ) in questo modo si riproduce la struttura del database.<br>
  ![](img-README/img7.png)
 - Rinominare il file ".env.example" in ".env". 
 Aprire il file ".env" e impostare i valori di connessione al database .
