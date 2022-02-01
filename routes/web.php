@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\DBcontroller;
-use App\Http\Controllers\MainView;
+use App\Http\Controllers\ControllerCRUD;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +13,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('layout');
 });
-
-Route::get('/',[MainView::class,'__invoke']);
-Route::get('viewaddConf', [DBcontroller::class, 'create']);
-Route::post('store-conf', [DBcontroller::class, 'store']);
-Route::get('collection', [DBcontroller::class, 'index']);
+Route::get('/',[ControllerCRUD::class,'show']);
+Route::get('/resource',[ControllerCRUD::class,'create']);
+Route::get('/weekly',[ControllerCRUD::class,'index']);
+Route::post('/element',[ControllerCRUD::class,'store']);

@@ -1,6 +1,5 @@
 @extends('layout')
-@section('content')
-
+@section('section')
 <div class="container push-top">
     
     <table class="table table-bordered">
@@ -14,12 +13,13 @@
         </thead>
         <tbody>
             
-            @foreach ($week as $key => $value) 
+            @foreach ($result as $key=>$value) 
+            
                 <tr>
-                    <th>{{$value->giorno}}</th>
-                    <td>{{$value->conferimento}}</td>
-                    <td>{{$value->oraInizio}}</td>
-                    <td>{{$value->oraFine}}</td>
+                    <th>{{$value['days']}}</th>
+                    <td>{{$value['material']}}</td>
+                    <td>{{$value['start_now']}}</td>
+                    <td>{{$value['end_now']}}</td>
                 </tr>
                 
             @endforeach

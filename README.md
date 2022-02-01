@@ -110,7 +110,7 @@ Il file web.php contiene i percorsi che RouteServiceProvider inserisce nel grupp
     <li>database/migrations: Le migrations consentendo di definire e condividere la definizione dello schema del database dell'applicazione.
     </li>
     <li>public/css/style.css</li>
-    <li>public/js/addInput.js</li>
+    <li>public/js/add_row.js</li>
     <li>resources/views: risiedono le varie view dell'app</li>
     <li>routes/web.php
 
