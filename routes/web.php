@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ControllerCRUD;
+use App\Http\Controllers\WithdrawalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
     return view('layout');
 });
-Route::get('/',[ControllerCRUD::class,'show']);
-Route::get('/resource',[ControllerCRUD::class,'create']);
-Route::get('/weekly',[ControllerCRUD::class,'index']);
-Route::post('/element',[ControllerCRUD::class,'store']);
+Route::get('/',[WithdrawalController::class,'show']);
+Route::get('/resource',[WithdrawalController::class,'create']);
+Route::get('/weekly',[WithdrawalController::class,'index']);
+Route::post('/element',[WithdrawalController::class,'store']);

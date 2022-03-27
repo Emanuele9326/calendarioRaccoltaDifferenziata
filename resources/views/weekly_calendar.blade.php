@@ -13,13 +13,13 @@
         </thead>
         <tbody>
             
-            @foreach ($result as $key=>$value) 
+            @foreach ($day_weekly as $key=>$value) 
             
                 <tr>
-                    <th>{{$value['days']}}</th>
-                    <td>{{$value['material']}}</td>
-                    <td>{{$value['start_now']}}</td>
-                    <td>{{$value['end_now']}}</td>
+                    <th>{{$value->days}}</th>
+                    <td>{{$value->withdraw}}</td>
+                    <td>{{$value->start}}</td>
+                    <td>{{$value->end}}</td>
                 </tr>
                 
             @endforeach
