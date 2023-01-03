@@ -1,5 +1,5 @@
 <h1 algin="center">appPHP: Calendario raccolta differenziata</h1>
-<h4>L'applicazione può essere visionata al seguente link: https://rcdif.emsviluppo.com</h4>
+<h4>L'applicazione può essere visionata al seguente link: https://rcdif.emsviluppo.com/public</h4>
 
 <details open="open">
   <summary>Sommario</summary>
